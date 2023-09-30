@@ -1,0 +1,368 @@
+@media (max-width: 1200px) {
+  .sub2_inner .lnb {
+    display: none;
+  }
+  .satisfaction_bot {
+    white-space: inherit;
+  }
+
+  .satisfaction_bot label a {
+    min-width: 90px;
+  }
+
+  .satisfaction_bot {
+    flex-direction: column;
+  }
+
+  .satisfaction_bot div:nth-of-type(2) input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .sub2_inner .lnb {
+    display: none;
+  }
+
+  /* 반응형부분 회원가입 */
+  .header_inner .nav_join {
+    display: none;
+  }
+
+  .sub2_inner .lnb {
+    display: none;
+  }
+
+  .sub2_content_wrap {
+    width: 90%;
+  }
+
+  .sub2_inner {
+    width: 90%;
+  }
+
+  .sub2_content_wrap .sub2_tit {
+    padding: 0 0 2em 0;
+  }
+
+  .sub2_content_wrap .sub2_tit .sub2_navi {
+    display: none;
+  }
+
+  .sub2_content_wrap .sub2_tit .sub2_etc {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+
+  .sub2_content_wrap .sub2_etc .sub2_print {
+    display: none;
+  }
+
+  .sub2_content_wrap {
+    padding: 1.5rem;
+  }
+
+  .sub2_content_wrap .sub2_tit h2 {
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  .sub2_top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub2_top h3 {
+    padding-bottom: 20px;
+  }
+
+  .sub2_top h3 b {
+    color: #7FC240;
+  }
+
+  .sub2_top .search {
+    display: block;
+
+  }
+
+  .sub2_top .search .select_box {
+    padding: 0.9em;
+    width: 100%;
+    display: block;
+  }
+
+  .sub2_top .search .input_box {
+    width: 70%;
+  }
+
+  .sub2_top .search .input_box input {
+    margin-top: 6px;
+  }
+
+  .sub2_top .search .input_box #ho {
+    width: 100%;
+  }
+
+  .sub2_top .search div {
+    width: 29%;
+    display: inline-block;
+  }
+
+  .sub2_top .search div a {
+    height: 43px;
+    width: 100%;
+  }
+
+  .sub2_mid table {
+    display: inline-block;
+  }
+
+  .sub2_mid table thead {
+    display: none;
+  }
+
+  .sub2_mid table tbody {
+    border-top: 2px solid #000;
+  }
+
+  .sub2_mid table tbody {
+    width: inherit;
+    display: inline-block;
+  }
+
+  .sub2_mid table tr {
+    padding: 7px 0;
+    width: inherit;
+    display: inline-block;
+    border-right: 0px;
+  }
+
+  .sub2_mid table tbody tr td {
+    float: left;
+    display: inline-block;
+    padding: 4px 7px;
+    border-right: 0px;
+    position: relative;
+
+  }
+
+  .sub2_mid table tbody tr td:nth-child(2)::before {
+    display: none;
+  }
+
+  .sub2_mid table tbody tr td:nth-child(5)::before {
+    display: none;
+  }
+
+
+
+  .sub2_mid table tbody tr td::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 0.6em;
+    background-color: #c4c4c4;
+    transform: translateY(-50%);
+  }
+
+  .sub2_mid table tbody tr td:nth-child(1) {
+    display: none;
+    text-align: center;
+  }
+
+  .sub2_mid table tbody tr td:nth-child(2) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+  }
+
+  .sub2_mid table tbody tr td:nth-child(3) {
+    text-align: center;
+  }
+
+  .sub2_mid table tbody tr td:nth-child(4) {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  /* 반응형부분 회원가입 */
+  .header_inner .nav_join {
+    display: none;
+  }
+
+  .sub2_inner .lnb {
+    display: none;
+  }
+
+  .sub2_content_wrap {
+    width: 90%;
+  }
+
+  .sub2_inner {
+    width: 90%;
+  }
+
+  .sub2_content_wrap .sub2_tit {
+    padding: 0 0 2em 0;
+  }
+
+  .sub2_content_wrap .sub2_tit .sub2_navi {
+    display: none;
+  }
+
+  .sub2_content_wrap .sub2_tit .sub2_etc {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0%;
+    right: 0;
+  }
+
+  .sub2_content_wrap .sub2_etc .sub2_print {
+    display: none;
+  }
+
+  .sub2_content_wrap {
+    padding: 1.5rem;
+  }
+
+  .sub2_content_wrap .sub2_tit h2 {
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  .sub2_top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub2_top h3 {
+    padding-bottom: 20px;
+  }
+
+  .sub2_top h3 b {
+    color: #7FC240;
+  }
+
+  .sub2_top .search {
+    display: block;
+
+  }
+
+  .sub2_top .search .select_box {
+    padding: 0.9em;
+    width: 100%;
+    display: block;
+  }
+
+  .sub2_top .search .input_box {
+    width: 70%;
+  }
+
+  .sub2_top .search .input_box input {
+    margin-top: 6px;
+  }
+
+  .sub2_top .search .input_box #ho {
+    width: 100%;
+  }
+
+  .sub2_top .search div {
+    width: 29%;
+    display: inline-block;
+  }
+
+  .sub2_top .search div a {
+    height: 43px;
+    width: 100%;
+  }
+
+  .sub2_mid table {
+    display: inline-block;
+  }
+
+  .sub2_mid table thead {
+    display: none;
+  }
+
+  .sub2_mid table tbody {
+    border-top: 2px solid #000;
+  }
+
+  .sub2_mid table tbody {
+    width: inherit;
+    display: inline-block;
+  }
+
+  .sub2_mid table tr {
+    padding: 7px 0;
+    width: inherit;
+    display: inline-block;
+    border-right: 0px;
+    /* grid-area:
+      "sub2_mid table tbody tr td:nth-child(2) sub2_mid table tbody tr td:nth-child(2) sub2_mid table tbody tr td:nth-child(2)"
+      "  .sub2_mid table tbody tr td:nth-child(3)   .sub2_mid table tbody tr td:nth-child(4)  .sub2_mid table tbody tr td:nth-child(5)" */
+  }
+
+  .sub2_mid table tbody tr td {
+    float: left;
+    display: inline-block;
+    padding: 4px 7px;
+    border-right: 0px;
+    position: relative;
+
+  }
+
+  .sub2_mid table tbody tr td:nth-child(2)::before {
+    display: none;
+  }
+
+  .sub2_mid table tbody tr td:nth-child(5)::before {
+    display: none;
+  }
+
+
+
+  .sub2_mid table tbody tr td::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 0.6em;
+    background-color: #c4c4c4;
+    transform: translateY(-50%);
+  }
+
+  .sub2_mid table tbody tr td:nth-child(1) {
+    display: none;
+  }
+
+  .sub2_mid table tbody tr td:nth-child(2) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+
+
+  }
+
+
+  .sub2_mid table tbody tr td:nth-child(3) {}
+
+  .sub2_mid table tbody tr td:nth-child(4) {}
+
+}

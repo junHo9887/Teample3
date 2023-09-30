@@ -1,0 +1,344 @@
+/* Basic font: Google font Noto Sans KR */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* Title font: Google font Oooh Baby */
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+/* font-family: 'Oooh Baby', cursive; */
+/* Point font: Noonnu SeoulHangangM */
+@font-face {
+  font-family: "SeoulHangangM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* common */
+:root {
+  /* color */
+  --mainColor: #7fc240;
+  --subColor01: #58758b;
+  --subColor02: #4b9ad0;
+  --subColor03: #ee6b20;
+  --subColor04: #ab3330;
+  --subColor05: #f6ce47;
+  --subColor06: #a1d3c5;
+  --subColor07: #9fcfa7;
+  --subColor08: #5bcc6e;
+  /* button color */
+  --mainDefault: #a6df70;
+  --mainHover: #84bb51;
+  --pressed: #678a45;
+  --btnFont: #2e4419;
+  /* font-size */
+  --h1: 2.8rem;
+  --h2: 2.4rem;
+  --h3: 2rem;
+  --h4: 1.6rem;
+  --h5: 1.2rem;
+  --h6: 1rem;
+}
+body {
+  font-size: 20px;
+}
+/* header */
+header {
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid orange; */
+  position: relative; /* search와 trigger의 위치 조정을 위함*/
+}
+/* header_logo */
+.header_logo {
+  width: 365px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 50px;
+}
+.header_logo img {
+  width: 48px;
+  height: 38px;
+  margin-right: 8px;
+}
+/* header_inner */
+.header_inner {
+  width: 1400px;
+  height: 100px;
+  margin: auto;
+  /* border: 1px solid green; */
+  display: flex;
+  position: relative;
+}
+/* nav */
+.nav {
+  /* border: 1px solid #000; */
+  width: 825px;
+  height: 100px;
+  position: relative;
+}
+.nav .nav_gnb {
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  align-items: center;
+  right: 0;
+}
+.nav .nav_gnb li {
+  flex: 1;
+  width: 127px;
+  position: relative;
+}
+.nav .nav_gnb > li > a {
+  /* border: 1px solid blue; */
+  display: block;
+  padding: 1rem 0.6rem;
+  height: 100px;
+  line-height: 70px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* subMenu */
+.nav_gnb_subMenu {
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 100;
+  justify-content: center;
+  font-size: 13px;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  background-repeat: no-repeat;
+  display: none;
+}
+.nav_gnb_subMenu ul > li {
+  text-align: center;
+  padding: 0.7rem 0.7rem;
+  transition: 0.5s;
+}
+.nav .nav_gnb > li > a:hover {
+  background-color: #d9d9d9;
+}
+.nav_gnb_subMenu ul > li:hover {
+  background-color: #a6df70;
+}
+/* 서브메뉴 뒷배경 */
+.subMenuBg {
+  width: 100%;
+  height: 280px;
+  z-index: 99;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 100%;
+  left: 0;
+  display: none;
+}
+/* login */
+.nav .nav_login {
+  position: absolute;
+  top: 33%;
+  right: -12%;
+}
+.nav .nav_login button {
+  border-style: none;
+  border: 2px solid #000;
+  border-radius: 28px;
+  width: 80px;
+  height: 30px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.nav .nav_login button:hover {
+  background-color: #d9d9d9;
+}
+.nav_join {
+  font-size: 60%;
+  position: absolute;
+  right: 3%;
+  top: 42%;
+}
+/* side_menu */
+.side_bar {
+  display: none;
+}
+/* search */
+.search {
+}
+.search a {
+}
+.search a i {
+  opacity: 0;
+}
+.search a i::after {
+  opacity: 0;
+}
+/* trigger */
+.trigger {
+  display: none;
+}
+
+/* main_visual */
+.main_visual {
+  width: 100%;
+  height: 700px;
+  background-image: url(../images/main_visual/main_visual1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+/* .main_visual .backg > ul > li > img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background-color: #5a5a5a;
+  opacity: 60%;
+  z-index: -1;
+} */
+.main_visual .backg > ul > li > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.main_visual .backg > ul > li > img:nth-child(2) {
+  background-size: cover;
+}
+.main_visual .backg > ul > li > img.active {
+  opacity: 1;
+}
+.backg_black {
+  width: 100%;
+  height: 100%;
+  background-color: #5a5a5a;
+  position: absolute;
+  opacity: 0.7;
+}
+.main_visual .main_visual_inner {
+  width: 1400px;
+  height: 700px;
+  margin: auto;
+  /* border: 3px solid yellow; */
+  position: relative;
+}
+.main_visual_inner h1 {
+  font-family: "Oooh Baby", cursive;
+  font-size: 100px;
+  font-weight: normal;
+  color: #aed8b7;
+  opacity: 15%;
+  position: absolute;
+  right: 13%;
+  top: 25%;
+}
+.main_visual_inner h2 {
+  font-family: "SeoulHangangM";
+  font-size: 50px;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0 4px 4px #3f5c24;
+  line-height: 60px;
+  text-align: right;
+  position: absolute;
+  right: 13%;
+  top: 39%;
+}
+.main_visual_inner h4 {
+  font-family: "SeoulHangangM";
+  font-size: var(--h4);
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0 4px 4px #3f5c24;
+  position: absolute;
+  bottom: 25%;
+  left: 12%;
+}
+
+.main_visual_inner .call {
+  font-family: "SeoulHangangM";
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0 4px 4px #3f5c24;
+  position: absolute;
+  bottom: 25.4%;
+  right: 25.8%;
+}
+.main_visual_inner .accuse {
+  font-family: "SeoulHangangM";
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 0 4px 4px #3f5c24;
+  position: absolute;
+  bottom: 25.4%;
+  right: 14.7%;
+}
+.main_visual_inner img {
+  position: absolute;
+}
+.main_visual_inner .direction01 {
+  right: 35%;
+  bottom: 23%;
+}
+.main_visual_inner .direction02 {
+  right: 20%;
+  bottom: 23%;
+}
+.main_visual_inner > .divider {
+  width: 1086px;
+  height: 8.52px;
+  border-radius: 60px;
+  background-color: #d6d6d6 !important;
+  position: absolute;
+  top: 532px;
+  left: 10%;
+}
+.main_visual_inner .btn {
+  display: flex;
+  justify-content: space-between;
+  width: 1084px;
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
+}
+.main_visual_inner .btn > div {
+  width: 98px;
+  height: 48px;
+  border-radius: 60px;
+  background-color: var(--mainDefault);
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+}
+.main_visual_inner .btn > div:hover {
+  background-color: var(--pressed);
+  box-shadow: 4px 4px 4px #464646;
+}
+.main_visual_inner .btn > div:hover a {
+  color: #fff;
+}
+.main_visual_inner .btn > div > a {
+  color: var(--btnFont);
+  font-size: var(--h6);
+  font-weight: bold;
+}

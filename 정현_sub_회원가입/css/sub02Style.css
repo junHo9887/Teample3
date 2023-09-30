@@ -1,0 +1,206 @@
+header {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+#header {
+  display: none;
+}
+#icon {
+  opacity: 0;
+}
+.subMenuBg {
+  background-color: rgba(148, 148, 148, 0.9);
+}
+/* .signUp button */
+.signUp button,
+#joinForm > input[type="submit"] {
+  border-style: none;
+  background-color: #3f5c24;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 115px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.signUp button:hover {
+  background-color: #678a45;
+}
+/* main: before form */
+.signUp {
+}
+.signUp .signUp_inner {
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+.signUp .signUp_inner h2 {
+  text-align: center;
+  font-size: var(--h2);
+  font-weight: 600;
+  position: relative;
+  padding-top: 3rem;
+}
+.signUp .signUp_inner h2::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 5px;
+  background-color: #3f5c24;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+.signUp .signUp_inner .sns {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1, auto;
+}
+.sns_icons {
+  display: flex;
+  justify-content: center;
+}
+.sns_icons a {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin: 0.5rem 1rem 2rem 1rem;
+}
+.sns_icons a {
+  padding: 0.5rem;
+}
+.sns_icons a img {
+  width: 55px;
+  height: 55px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.signUp .signUp_inner .sns p {
+  font-size: var(--h6);
+  margin: 2.5rem 0 0;
+}
+.sns_icons a:hover img {
+  transform: scale(1.3);
+}
+/* main: form */
+form {
+  display: block;
+  margin: 2rem 0;
+}
+.getNews {
+  text-align: center;
+}
+.inputInfo {
+  width: fit-content;
+  text-align: left;
+  margin: auto;
+}
+.inputInfo label {
+  width: 120px;
+  display: inline-block;
+  margin-bottom: 0.1rem;
+}
+.inputInfo input {
+  border-style: none;
+  border: 3px solid #3f5c24;
+  border-radius: 3px;
+  width: 250px;
+  height: 30px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  text-indent: 5px;
+}
+/***** 인풋박스 안쪽 폰트 크기 조절 *****/
+.inputInfo input::placeholder {
+  font-size: 5px;
+  color: #a0a0a0;
+}
+/* main: form 소식받기 */
+.getNews {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.getNews span,
+.getNews label {
+  margin-right: 2rem;
+  font-size: var(--h5);
+}
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+/* main: form 동의 */
+.agreements {
+  border: 3px solid #3f5c24;
+  border-radius: 5px;
+  width: 700px;
+  margin: 6rem auto;
+}
+.agreements h4 {
+  font-size: var(--h4);
+  font-weight: 700;
+  margin: 1rem;
+  position: relative;
+  text-align: center;
+}
+.agreements h4::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  top: 150%;
+  width: 400px;
+  height: 3px;
+  background-color: #3f5c24;
+}
+.agreements .agree input {
+  display: inline-block;
+  justify-content: left;
+  text-align: left;
+  margin: 1rem 2rem 1rem 2rem;
+  width: 20px;
+  height: 20px;
+}
+.agreements .agree label {
+  font-size: var(--h4);
+  font-weight: 400;
+  line-height: 1;
+}
+.agreements .agreeBox {
+  padding: 1.5rem;
+  font-size: var(--h5);
+}
+/* main: 가입버튼 */
+#joinForm > input[type="submit"] {
+  position: absolute;
+  bottom: -6%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+/* main: 풀 이미지 */
+.signUp_inner > .img img {
+  position: absolute;
+  width: 450px;
+  height: 750px;
+  right: -6%;
+  bottom: -7%;
+  z-index: -1;
+}
+/* .already */
+.already {
+  display: none;
+}
+/* footer */
+footer {
+  margin-top: 3rem;
+}
+/* 라디오, 체크박스 색상변경 */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #3f5c24;
+}

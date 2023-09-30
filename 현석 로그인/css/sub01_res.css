@@ -1,0 +1,156 @@
+@media (max-width: 500px) {
+  .login_box {
+    display: none;
+  }
+  .ad_box {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .log_box {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+  }
+  .log_logo {
+    display: flex;
+    justify-content: center;
+  }
+  .log_logo span {
+    display: inline-block;
+    width: 43px;
+    height: 35px;
+    background: url(../images/logo.png) no-repeat center center;
+    background-size: cover;
+    margin-right: 10px;
+  }
+  .log_logo p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .input_box {
+    margin-top: 37px;
+  }
+  .input_id {
+    width: 298px;
+    height: 50px;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #dbdbdb;
+  }
+  .input_password {
+    width: 298px;
+    height: 50px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #dbdbdb;
+  }
+  .Log_in {
+    width: 298px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #3f5c24;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 19px;
+  }
+  .Log_in:hover {
+    background-color: #678a45;
+  }
+  .repassword {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .repassword p a {
+    margin-right: 20px;
+    color: #595c59;
+    letter-spacing: 0px;
+  }
+  .repassword span a {
+    color: #595c59;
+  }
+  .sns_tx {
+    margin-top: 38px;
+    font-size: 11px;
+    letter-spacing: 0px;
+    color: #828382;
+  }
+  .sns_icon {
+    margin-top: 18px;
+  }
+  .sns_icon ul {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+  }
+  .sns_icon ul li {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .sns_icon ul li:nth-child(1) {
+    width: 38px;
+    height: 38px;
+    background: url(../images/naver.png) no-repeat center center;
+    background-size: cover;
+  }
+  .sns_icon ul li:nth-child(2) {
+    width: 38px;
+    height: 38px;
+    background: url(../images/kakao.png) no-repeat center center;
+    background-size: cover;
+  }
+  .sns_icon ul li:nth-child(3) {
+    width: 38px;
+    height: 38px;
+    background: url(../images/logos_facebook.png) no-repeat center center;
+    background-size: cover;
+  }
+  .sns_icon ul li:nth-child(4) {
+    width: 42px;
+    height: 42px;
+    background: url(../images/google.PNG) no-repeat center center;
+    background-size: cover;
+  }
+  .sns_icon ul li:nth-child(5) {
+    width: 38px;
+    height: 38px;
+    background: url(../images/appple.svg) no-repeat center center;
+    background-size: cover;
+  }
+  .login_pro {
+    margin-top: 30px;
+    font-size: 13px;
+    letter-spacing: 0px;
+  }
+  .login_pro p a {
+    color: #c2c8cc;
+  }
+  .sns_line {
+    width: 300px;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin-top: 33px;
+  }
+  .login_nom {
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  .login_nom p a {
+    color: #424242;
+  }
+
+  .cop {
+    margin-top: 170px;
+    font-size: 7px;
+    color: #aaaaaa;
+    letter-spacing: 0px;
+  }
+}

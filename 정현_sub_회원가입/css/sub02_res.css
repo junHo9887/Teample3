@@ -1,0 +1,109 @@
+@media (max-width: 500px) {
+  :root {
+    /* font size */
+    --h1Size: 2rem;
+    --h2Size: 1.5rem;
+    --h3size: 0.85rem;
+    --h4Size: 0.8rem;
+    --h5Size: 0.6rem;
+    --h6Size: 0.4rem;
+    --buttonSize: 0.7rem;
+  }
+  /* .signUp button */
+  .signUp button {
+    width: 18%;
+    font-size: var(--h6Size);
+    border-radius: 3px;
+  }
+  /* main: before form */
+  .signUp .signUp_inner {
+    width: 100%;
+  }
+  .signUp .signUp_inner h2 {
+    font-size: var(--h2Size);
+  }
+  .signUp .signUp_inner h2::after {
+    width: 25%;
+  }
+  .sns_icons a {
+    margin: 0;
+  }
+  .sns_icons a img {
+    width: 100%;
+    height: 100%;
+  }
+  .signUp .signUp_inner .sns p {
+    margin-top: 1.5rem;
+  }
+  /* main: form */
+  .inputInfo {
+    width: 450px;
+  }
+  .inputInfo label {
+    font-size: var(--h4Size);
+    width: 30%;
+    padding-left: 2rem;
+  }
+  .inputInfo input {
+    width: 45%;
+  }
+  /***** 인풋박스 안쪽 폰트 크기 조절 *****/
+  .inputInfo input::placeholder {
+    font-size: 0.5rem !important;
+    /* 이거 안 먹는데 그 이유가 구글 서버 페이지 최소폰트가 10px이라 그럼...어쩔수없다 */
+  }
+  /* main: form 소식받기 */
+  .getNews {
+    display: block;
+  }
+  .getNews span,
+  .getNews_input label {
+    font-size: 15px;
+  }
+  input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  /* main: form 동의 */
+  .agreements {
+    width: 400px;
+  }
+  .agreements h4 {
+    font-size: var(--h3Size);
+  }
+  .agreements h4::after {
+    width: 80%;
+    left: 10%;
+  }
+  .agreements .agree input {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0.5rem;
+  }
+  .agreements .agree label {
+    font-size: var(--h3Size);
+    line-height: 0.5;
+  }
+  /* main: 가입버튼 */
+  #joinForm > input[type="submit"] {
+    bottom: -8%;
+  }
+  /* main: 풀 이미지 */
+  .signUp_inner > .img img {
+    display: none;
+  }
+  /* .already */
+  .already {
+    display: block;
+    font-size: var(--h4Size);
+    margin: 9rem 0 7rem 0;
+    text-align: center;
+  }
+  .already a {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  /* footer */
+  footer {
+    display: none;
+  }
+}

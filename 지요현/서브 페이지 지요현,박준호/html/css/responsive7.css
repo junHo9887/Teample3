@@ -1,0 +1,8 @@
+@media  (max-width : 500px) {
+  hr{
+    display: none;
+  }
+    .slide7{
+      display: none;
+    }
+}

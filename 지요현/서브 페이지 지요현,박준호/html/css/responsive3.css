@@ -1,0 +1,115 @@
+@media(max-width:500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .notice {
+    margin: 20px 0 70px 0;
+  }
+
+  /* 컨테이너 랑 이너 */
+  .notice .inner,
+  .notice .container {
+    width: 90%;
+  }
+
+  /* 전체적 크기 */
+  .notice .container {
+    margin: auto;
+    /* width: 400px; */
+    width: 90%;
+  }
+
+  .notice .container .tab_menu {
+    margin-top: 110px;
+    /* width: 400px; */
+    width: 90%;
+  }
+
+  .notice.container .tab_menu .content2 {}
+
+  .notice .container .tab_menu .content1,
+  .notice .container .tab_menu .content2 {
+    list-style: none;
+    font-size: 19px;
+    width: 400px;
+  }
+
+  /* 탭상단 */
+  .notice .container .tab {
+    width: 400px;
+    margin: auto;
+  }
+
+  .notice .container .tab li {
+    font-size: 21px;
+    line-height: 2.5;
+    width: 200px;
+  }
+
+  .notice .container .tab #notice {
+    margin-top: 30px;
+    line-height: 3.5;
+    /* height: 95px; */
+    /* height: 80px; */
+  }
+
+  .notice .container .tab #camp {
+    margin-top: 50px;
+    line-height: 3;
+    left: 51%;
+    /* height: 74px; */
+    height: 60px;
+  }
+
+  /* 내용부분 */
+  .notice .container .tab_menu .content1,
+  .notice .container .tab_menu .content2 {
+    overflow: hidden;
+    /* height: 320px; */
+  }
+
+  .notice .container .tab_menu .content1 li,
+  .notice .container .tab_menu .content2 li {
+    line-height: 1.3;
+    padding-top: 2px;
+    margin-top: 10px;
+    border-bottom: none;
+  }
+
+  .notice .container .tab_menu .content1 li a,
+  .notice .container .tab_menu .content2 li a {
+    margin-top: 50px;
+    /* margin-left: 10px; */
+    font-size: 16px;
+  }
+
+  .notice .container .tab_menu .content1 li img,
+  .notice .container .tab_menu .content2 li img {
+    transform: translate(20px, 20px);
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  .notice .container .tab_menu .content1 li b,
+  .notice .container .tab_menu .content2 li b {
+    margin: 0 0 0 50px;
+    font-size: 14px;
+    display: block;
+  }
+
+  .notice .container .tab_menu .content1 li span,
+  .notice .container .tab_menu .content2 li span {
+    color: #7E7272;
+    font-size: 13px;
+    margin-right: 40%;
+    margin-top: -4%;
+  }
+
+  /* 설문조사 */
+  .notice .inner .poll {
+    display: none;
+  }
+}

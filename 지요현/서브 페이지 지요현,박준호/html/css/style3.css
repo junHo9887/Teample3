@@ -1,0 +1,196 @@
+*{
+}
+/* 이너 */
+.notice .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1400px;
+  height: 450px;
+}
+.container{
+  max-width: 1000px;
+  position: relative;
+}
+/* 공지사항 캠페인 부분 */
+.notice .tab{
+  font-weight: 800;
+  display: flex;
+  list-style: none;
+}
+.notice .tab li:nth-child(1){
+  position:absolute;
+  background-color: #2EB300;
+  border-radius: 30px 30px 0 0 ;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  text-align: center;
+  line-height: 3;
+  display: block;
+  width: 490px;
+  height:80px;
+}
+.notice .tab li:nth-child(2){
+  margin-top: 20px;
+  left: 490px;
+  position:absolute;
+  background-color: #A6DF70;
+  border-radius: 30px 30px 0 0 ;
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  text-align: center;
+  line-height: 2;
+  display: block;
+  width: 490px;
+  height: 60px;
+}
+.notice .tab li:nth-child(1):hover{
+  background-color: #5ae971;
+}
+.notice .tab li:nth-child(2):hover{
+  background-color: #c5f79a;
+}
+/* 내용부분 */
+.notice .tab_menu{
+  margin-top: 80px;
+  color: #2EB300;
+}
+.notice .tab_menu ul{
+  margin-top: 0;
+  display: block;
+  height: 340px;
+  width: 980px;
+  font-size: 22px;
+  border: 1px solid #2cc718;
+}
+.notice .tab_menu ul li{
+ padding: 13.5px 0 0 0;
+  border-bottom: 1px solid #a9dfb5;
+}
+.notice .tab_menu ul li:last-child{
+  border-bottom: none;
+}
+.notice .tab_menu ul li img{
+  display: none;
+}
+.notice .tab_menu ul li b{
+ display: none;
+  margin: 0 20px 0 20px;
+}
+.notice .tab_menu ul li span{
+  float: right;
+}
+.notice .tab_menu ul li a{
+  color: #000;
+  text-decoration: none; 
+}
+.notice .tab_menu ul li a:hover{
+  color:#0ccf26;
+}
+.notice .tab_menu .content2{
+  display: none;
+}
+/* 설문조사 */
+.poll{
+  box-shadow: 5px 5px #216809;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 354px;
+  height: 390px;
+  background-color:#E0F4DD ;
+  margin-top: 18px;
+}
+.poll .item1{
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 61px;
+}
+.poll .item1 b{
+  color: #008612;
+  font-size: 25px;
+}
+.poll .item1 a{
+  margin-top: 7px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+ }
+ .poll .item1 a:hover span{
+  transform: rotate(180deg);
+  transition: 0.5s;
+ }
+.poll .item1 span:nth-child(1){
+  position:absolute;
+  top: 43%;
+  display: block;
+  background-color: blue;
+  width: 30px ;
+  height: 5px;
+}
+.poll .item1 span:nth-child(2){
+  position:absolute;
+  left: 43%;
+  display: block;
+  background-color: blue;
+  width: 5px ;
+  height: 30px;
+}
+.poll .item2{
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 550;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width:inherit;
+  height: 326px;
+}
+/* 라디오 버튼 */
+.poll [type="radio"] {
+  font-size: 25px;
+  margin: 0 18px 5px 0;
+  vertical-align: middle;
+  appearance: none;
+  border: max(5px, 0.1em) solid rgb(161, 230, 209);
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  transition: border 0.3s ease-in-out;
+}
+.poll [type="radio"]:last-child{
+  margin-left: 10px;
+}
+.poll [type="radio"]:checked {
+  border: 0.4em solid rgb(126, 236, 131);
+}
+
+.poll [type="radio"]:focus-visible {
+  outline-offset: max(2px, 0.1em);
+  outline: max(2px, 0.1em) dotted rgb(255, 255, 255);
+}
+.poll [type="radio"]:hover {
+  box-shadow: 0 0 0 max(3px) rgb(174, 221, 180);
+  cursor: pointer;
+}
+/* 완료버튼 */
+.poll .item2 .btn{
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  width: 160px;
+  height: 40px;
+  background-color: #37af0e;
+  border-radius: 30px ;
+  cursor: pointer;
+}
+.poll .item2 .btn:hover{
+  background-color: rgb(6, 99, 24);
+}
